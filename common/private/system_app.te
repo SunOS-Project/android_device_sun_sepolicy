@@ -3,3 +3,17 @@ get_prop(system_app, custom_version_prop)
 
 # Allow Settings to read ro.vendor.build.security_patch
 get_prop(system_app, vendor_security_patch_level_prop)
+
+# Allow Settings to read sun features
+get_prop(system_app, sun_feature_prop)
+
+# Online configs
+allow system_app online_config_file:file create_file_perms;
+allow system_app online_config_file:dir rw_dir_perms;
+
+# Allow Battery HAL service to be found
+hal_client_domain(system_app, hal_battery)
+# Allow DisplayFeature HAL service to be found
+hal_client_domain(system_app, hal_displayfeature)
+# Allow VibratorExt HAL service to be found
+hal_client_domain(system_app, hal_vibrator_ext)

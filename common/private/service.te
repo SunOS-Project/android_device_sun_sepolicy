@@ -1,1 +1,9 @@
 type adbroot_service,                   service_manager_type;
+type app_props_manager_service, app_api_service, system_server_service, service_manager_type;
+type display_resolution_manager_service, system_api_service, system_server_service, service_manager_type;
+type game_ext_service, system_api_service, system_server_service, service_manager_type;
+type linearmotor_vibrator_service, app_api_service, system_server_service, service_manager_type;
+type online_config_service, system_api_service, system_server_service, service_manager_type;
+type refresh_rate_manager_service, system_api_service, system_server_service, service_manager_type;
+type rotate_manager_service, system_api_service, system_server_service, service_manager_type;
+type sensor_block_manager_service, app_api_service, system_server_service, service_manager_type;

@@ -1,0 +1,4 @@
+# HALs
+hal_attribute_sun(battery)
+hal_attribute_sun(displayfeature)
+hal_attribute_sun(vibrator_ext)

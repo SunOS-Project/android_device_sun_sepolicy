@@ -1,1 +1,9 @@
 adbroot_service                           u:object_r:adbroot_service:s0
+app_props                                 u:object_r:app_props_manager_service:s0
+game_ext                                  u:object_r:game_ext_service:s0
+linearmotor                               u:object_r:linearmotor_vibrator_service:s0
+online_config                             u:object_r:online_config_service:s0
+refresh_rate_ext                          u:object_r:refresh_rate_manager_service:s0
+resolution_ext                            u:object_r:display_resolution_manager_service:s0
+rotate_ext                                u:object_r:rotate_manager_service:s0
+sensor_block                              u:object_r:sensor_block_manager_service:s0

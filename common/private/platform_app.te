@@ -6,5 +6,16 @@ allow platform_app ota_package_file:file create_file_perms;
 allow platform_app ota_package_file:dir rw_dir_perms;
 allow platform_app recovery_service:service_manager find;
 
+# Online configs
+allow platform_app online_config_file:file create_file_perms;
+allow platform_app online_config_file:dir rw_dir_perms;
+
 # Allow NFC service to be found
 allow platform_app nfc_service:service_manager find;
+
+# Allow Battery HAL service to be found
+hal_client_domain(platform_app, hal_battery)
+# Allow DisplayFeature HAL service to be found
+hal_client_domain(platform_app, hal_displayfeature)
+# Allow VibratorExt HAL service to be found
+hal_client_domain(platform_app, hal_vibrator_ext)

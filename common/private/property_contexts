@@ -26,6 +26,16 @@ ro.minui.blacklist_input_devices       u:object_r:recovery_config_prop:s0
 # Recovery touch
 ro.minui.default_touch_rotation        u:object_r:recovery_config_prop:s0
 
+# Resolution switch
+ro.sun.display.resolution_switch  u:object_r:exported_system_prop:s0
+
+# Sun device
+ro.sun.device                      u:object_r:exported_system_prop:s0
+
+# Sun feature
+ro.sun.feature.                    u:object_r:exported_system_prop:s0
+sys.sun.feature.                   u:object_r:sun_feature_prop:s0
+
 # xtra-daemon control
 persist.sys.xtra-daemon.enabled        u:object_r:xtra_control_prop:s0 exact bool
 

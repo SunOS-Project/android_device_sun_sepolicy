@@ -1,0 +1,5 @@
+type hal_battery_default, domain;
+hal_server_domain(hal_battery_default, hal_battery)
+
+type hal_battery_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_battery_default)

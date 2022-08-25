@@ -1,0 +1,14 @@
+# HWBinder IPC from client to server
+binder_call(hal_battery_client, hal_battery_server)
+
+hal_attribute_service(hal_battery, hal_battery_service)
+binder_call(hal_battery_server, servicemanager)
+
+# Allow binder communication with platform_app
+binder_call(hal_battery, platform_app)
+
+# Allow binder communication with system_app
+binder_call(hal_battery, system_app)
+
+# Allow binder communication with system_server
+binder_call(hal_battery, system_server)

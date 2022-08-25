@@ -1,0 +1,2 @@
+# Allow DisplayFeature HAL service to be found
+hal_client_domain(surfaceflinger, hal_displayfeature)
