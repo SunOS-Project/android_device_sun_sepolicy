@@ -1,1 +1,3 @@
+set_prop(shell, pih_disable_prop)
+
 get_prop(shell, custom_version_prop)

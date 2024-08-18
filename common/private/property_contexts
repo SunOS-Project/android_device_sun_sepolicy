@@ -26,6 +26,9 @@ ro.config.force_multi_window           u:object_r:exported_config_prop:s0 exact 
 persist.vendor.nfc.config_file_name    u:object_r:vendor_persist_nfc_prop:s0 exact string
 persist.vendor.nfc.fw_file_name        u:object_r:vendor_persist_nfc_prop:s0 exact string
 
+# PIHooks
+persist.sys.pihooks.disable.           u:object_r:pih_disable_prop:s0
+
 # Recovery battery
 ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact bool
 
