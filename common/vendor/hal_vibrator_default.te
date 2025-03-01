@@ -1,1 +1,7 @@
 hwbinder_use(hal_vibrator_default)
+
+allow hal_vibrator_default aac_richtap_dev_device:chr_file rw_file_perms;
+allow hal_vibrator_default appdomain_tmpfs:file read;
+allow hal_vibrator_default untrusted_app_all:fd use;
+
+get_prop(hal_vibrator_default, sun_feature_prop)
