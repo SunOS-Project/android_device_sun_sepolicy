@@ -1,3 +1,0 @@
-dontaudit untrusted_app odm_cast_prop:file r_file_perms;
-dontaudit untrusted_app proc_net:file r_file_perms;
-dontaudit untrusted_app wifi_config_prop:file r_file_perms;
