@@ -4,13 +4,13 @@ allow system_server adbroot_service:service_manager find;
 
 # Let system server find auxiliary camera properties
 get_prop(system_server, vendor_persist_camera_prop)
-
-# Let system server read sun features
-get_prop(system_server, sun_feature_prop)
  
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
 
+# Let system server set sun exported prop
+set_prop(system_server, sun_exported_prop)
+ 
 # Allow Battery HAL service to be found
 hal_client_domain(system_server, hal_battery)
 # Allow DisplayFeature HAL service to be found

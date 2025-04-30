@@ -34,8 +34,9 @@ ro.sun.device                      u:object_r:exported_system_prop:s0
 
 # Sun feature
 ro.sun.feature.                    u:object_r:exported_system_prop:s0
-sys.sun.feature.                   u:object_r:sun_feature_prop:s0
-
+sys.sun.feature.                   u:object_r:sun_exported_prop:s0
+persist.sys.sun.richtap.debug      u:object_r:sun_exported_prop:s0
+ 
 # xtra-daemon control
 persist.sys.xtra-daemon.enabled        u:object_r:xtra_control_prop:s0 exact bool
 

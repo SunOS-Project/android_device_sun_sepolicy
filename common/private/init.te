@@ -1,0 +1,2 @@
+# Allow all init to read sun exported prop
+get_prop(init, sun_exported_prop)
