@@ -4,6 +4,9 @@ system_vendor_config_prop(vendor_persist_camera_prop)
 # Sun exported prop
 system_public_prop(sun_exported_prop);
 
+# NFC
+system_vendor_config_prop(vendor_persist_nfc_prop)
+
 # USB
 system_vendor_config_prop(usb_uvc_config_prop)
 
